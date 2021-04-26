@@ -1,0 +1,84 @@
+<!--
+    Main Project - old prodect 
+    author : Eunjin Ha
+    Date : 10, Apr, 2021
+    Discription : Included FAQ & contact to the company
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Home</title>
+    <meta name="discription" content="main project">
+    <meta name="robot" content="noindex, nofollowing">
+     <!-- css -->
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">  
+    <!-- script & add for plus icon -->
+    <script src="https://kit.fontawesome.com/62fd5d838c.js" crossorigin="anonymous"></script> 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js/index.js" defer> </script>
+    <script src="./js/product.js" defer> </script>
+</head>
+<body>
+     <!-- Header  -->
+     <header id="header">
+        <!-- global header  -->
+    </header>
+
+    <!-- Main area  -->
+    <main>
+        <!-- Section 1 : FAQ  -->
+        <section class="area-1">
+            <h2>FAQ</h2>
+            <button class="btnFaq">Where can I get information on the company? <i class="fas fa-plus"></i> </button>
+            <div class="detail-faq">
+                <p>The Apple Site Map contains links to a variety of information about Apple.</p>
+            </div>
+        
+            <button class="btnFaq">Do you provide tours of your headquarters? <i class="fas fa-plus"></i> </button>
+            <div class="detail-faq">
+                <p>No, we do not provide tours. But the Apple Park Visitor Center is open to the public with limited capacity, and health and safety measures in place. The cafe and roof terrace are currently closed. The Apple Park Visitor Center is located at 10600 North Tantau Avenue, Cupertino, CA, 95014.</p>
+            </div>
+
+            <button class="btnFaq">How can I get the current Apple stock price? <i class="fas fa-plus"></i> </button>
+            <div class="detail-faq">
+                <p>A 20 minute delayed price as well as other information regarding Apple stock is provided by Ticker Technologies.</p>
+            </div>
+
+            <button class="btnFaq">Can I purchase stock directly from Apple? <i class="fas fa-plus"></i> </button>
+            <div class="detail-faq">
+                <p>No, but Apple stock can be purchased through just about any brokerage firm, including online brokerage services.</p>
+            </div>
+
+            <button class="btnFaq">How many times has Apple’s stock split?<i class="fas fa-plus"></i> </button>
+            <div class="detail-faq">
+                <p>Apple went public on December 12, 1980 at $22.00 per share. The stock has split five times since the IPO, so on a split-adjusted basis the IPO share price was $.10.</p>
+            </div>
+        </section>
+
+        <!-- Section 2 : Contact us  -->
+        <section class="area-2">
+            <h1>Contact us </h1>
+            <form action="#">
+                <input type="text" class="name" maxlength="30" placeholder="Name">
+                <input type="email" class="email" placeholder="E-mail" >
+                <textarea name="content" id="content" cols="30" rows="10" placeholder="Please enter contents"></textarea>
+                
+                <button id="btnSubmit" class="lg-btn view" onclick="btnsubmit();"> Submit </button>
+            </form>
+        </section>
+    </main>
+
+    <!-- footer  -->
+    <footer id="footer">
+        <!-- global footer  -->
+    </footer>
+</body>
+</html>

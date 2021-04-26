@@ -1,0 +1,76 @@
+<!--
+    Main Project - old prodect 
+    author : Eunjin Ha
+    Date : 10, Apr, 2021
+    Discription : Show products detail and can buy 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Home</title>
+    <meta name="discription" content="main project">
+    <meta name="robot" content="noindex, nofollowing">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">  
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js/index.js" defer> </script>
+    <script src="./js/product.js" defer> </script>
+</head>
+<body>
+     <!-- Header  -->
+     <header id="header">
+        <!-- global header  -->
+    </header>
+
+    <!-- Main area  -->
+    <main>
+        <!-- Section 1 : show product : when you click color button you can see the image changed-->
+        <section class="area-1">
+            <h2>iPod nano (3rd generation)</h2>
+            <div>
+                <img id="img-product" src="./img/ipod-nano-3rd-gen-1.png" alt="ipod-nano-3rd-gen">
+            </div>
+            <div class="select-product">
+                <button class="red" onclick="toggleColor(1);">Red</button>
+                <button class="blue" onclick="toggleColor(2);">Blue</button>
+                <button class="pink" onclick="toggleColor(3);">Pink</button>
+                <button class="grey" onclick="toggleColor(4);">Grey</button>
+                <button class="black" onclick="toggleColor(5);">Black</button>
+            </div>
+            <div>
+                <button class="lg-btn view" onclick="location.href='#area-2'"> View More </button>    
+                <button class="lg-btn buy" onclick="buy();"> Buy : $99.00  </button>
+            </div>
+        </section>
+
+        <!-- Section 2 : Text -->        
+        <section class="area-2"  id="area-2">
+            <h1>What's detail</h1>
+        </section>
+        
+        <!-- Section 3 : Product detail images -->  
+        <section class="area-3">
+            <span>Variable colours</span>
+            <img src="./img/detail-3.jpg" alt="detail-3">
+
+            <span>listening music</span>
+            <img src="./img/detail-2.jpg" alt="detail-2">   
+
+            <span>Watching video</span>
+            <img src="./img/detail-1.jpg" alt="detail-1">   
+        </section>
+    </main>
+    
+    <!-- footer  -->
+    <footer id="footer">
+        <!-- global footer  -->
+    </footer>
+</body>
+</html>

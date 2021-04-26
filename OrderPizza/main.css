@@ -1,0 +1,257 @@
+:root{
+    /* font variables */
+    --font-lg: 3rem;
+    --font-md: 1.5rem;
+    --font-sm: 1.3rem;
+    --font-ssm: 0.8rem;
+
+    /* padding variables */
+    --padding-lg: 3rem;
+    --padding-md: 1.5rem;
+    --padding-sm: 1rem;
+
+    /* color variables */
+    --dark-grey : #373737;
+    --grey : #616161;
+    --red : #d32f2f;
+    --white : #f1f1f1;
+    --pink :#ffa4a2;
+}
+
+/* Declare of default elements */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding:var(--padding-lg);
+    font-family: 'Big Shoulders Display', cursive;
+}
+h1{
+    font-size: var(--font-lg);
+    padding: var(--padding-md);
+    text-transform: uppercase;
+    color:var(--red);
+    align-items: center;
+    text-align: center;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+ul li{
+    display: inline-block;    
+    margin-right: 0.8rem;
+    font-size: var(--font-sm);
+}
+button{
+    padding:0px;
+    margin-bottom:10px;
+    cursor: pointer;
+}
+button:focus{
+    outline: 0;
+}
+
+a,img{
+    cursor: pointer;
+    opacity: 1;
+    transition: transform 3s;
+}
+
+a:hover, img:hover{
+    opacity: 0.6;;
+}
+/* Declare of default elements */
+
+/* figure - image */
+figure {
+    margin: 1.2rem;
+    align-items: center;
+    text-align: center;
+}
+
+.figure_img a img{
+    width: 100%;
+    max-width: 270px;
+    height: auto;
+    max-height: 230px;
+}
+figcaption{
+    /* padding: 1.rem; */
+    font-size: var(--font-md);
+    text-align: center;
+}
+
+/* Pick a pizza */
+.show_menu{
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    max-width: 100%;
+}
+
+/* order_detail */
+.order_detail{
+   padding-top: var(--padding-lg);
+ 
+}
+.order_detail .order{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: var(--padding-md);
+    margin:0;
+}
+
+/* quantity box*/
+.choose-lg-box {
+    font-size: var(--font-md);
+}
+
+/* Left slide */
+.leftSide img{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+}
+
+/* Right side */
+.rightSide{
+    width: 100%; 
+    max-width: 40%;
+    padding-bottom: var(--padding-sm);
+    margin-bottom: 0;
+}
+
+.sidedish {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+.sidedish ul li{
+    padding: var(--padding-sm);
+}
+.sidedish .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+    font-size: var(--font-md);
+    height: auto;
+}
+.sidedish .container ul{
+    width: 100%;
+    max-width: 220px;
+}
+
+.sidedish .container img{
+    width: 100%;
+    max-width: 170px;
+    height: auto;
+}
+.sidedish .container select{
+    padding: 2px;
+    font-size: 20px;
+    border: none;
+    width: 100%;
+    max-width: 12%;
+}
+
+
+/* Check Order - bottom */
+.check_order{
+    position: sticky;
+    bottom: 5px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--grey);
+    margin-top: 60px;
+    padding: var(--padding-sm);
+}
+
+/* Button */
+.btn-lg{
+    width: 165px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--red);
+    opacity: 1;
+    transition: 0.3s;
+}
+.btn-lg:hover{
+    opacity:0.8;
+}
+.choose-lg-box .btn-up, .btn-down{
+    padding: 10px;
+    font-size: 20px;
+    background: var(--white);
+    border: none;
+}
+
+/* Font */
+.font_lg{
+    font-size: var(--font-lg);
+    text-align: center;
+    color: var(--red);
+}
+.font_md{
+    font-size: var(--font-md);
+    text-align: left;
+}
+.font_md_white{
+    font-size: var(--font-md);
+    text-align: center;
+    color: var(--white);
+}
+.font_sm{
+    font-size: var(--font-sm);
+    text-align: center;
+    color: var(--grey);
+}
+.txtupper{
+    text-transform: uppercase;
+}
+.txt_pink{
+    color: var(--pink);
+}
+.line{
+    border-top: 3px solid #000;
+    padding-top: var(--padding-sm);
+}
+
+/* move to top */
+.moveTop{
+    float: right;
+    text-align: center;
+    height: auto;
+    width: 50px;
+    height: 50px;
+    background-color: var(--pink); 
+    border-radius: 20px;
+}
+
+/* input */
+.choose-lg-box input[type=number]{
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    width: 100%;
+    max-width: 70%;
+    background: var(--white);
+}
+
+

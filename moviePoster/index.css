@@ -1,0 +1,237 @@
+:root{
+    /* padding */
+    --padding-lg:30px;
+    --padding-md:17px;
+    --padding-sm:5px;
+
+    /* font size */
+    --font-lg:3rem;
+    --font-md:2rem;
+    --font-sm:0.8rem;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    color: #777;
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+main{
+    background-image: url("../moviePoster/img/bg2.jpg");
+    height: 100%;
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    
+    /* position: relative; */
+    opacity: 0.85;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* control of movie title area  */
+.title {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.8s;
+}
+.title:hover{
+    transform: scale(1.2);
+}
+.title span.border {
+    background-color: #4a138c;
+    color: #fff;
+    padding: var(--padding-md);
+    font-size: var(--font-md);
+    letter-spacing: 10px;
+}
+/* control of movie title area  */
+
+/* control of ul - Commentsarea  */
+ul{
+    text-align: center;
+}
+ul> li{
+    display: inline-block;
+    letter-spacing: 3px;
+    padding-top: var(--padding-lg);
+    font-size: var(--font-md);
+    text-align: center;
+    color: #fff9c4;
+}
+ul>li>span{
+    text-transform: uppercase;
+    padding: var(--padding-sm);
+}
+ul>li> .fas.fa-star{
+    color: #ab47bc;
+}
+/* control of ul - Commentsarea  */
+
+/* Move to instagram of actresses */
+.actor-info{
+    display: flex;
+    flex-direction: row;
+}
+.actor-info > div{
+    cursor: pointer;
+    color: #df78ef;
+    text-transform: uppercase;
+}
+
+.sns1{
+    width: 20%;
+    height: auto;
+    align-items: left;
+}
+.sns1-info{
+    display: none;
+    margin-left: -60px;
+}
+
+.sns1:hover + .sns1-info{
+    display: block;
+}
+.sns2{
+    width: 20%;
+    height: auto;
+}
+.sns2-info{
+    display: none;
+    margin-left: -15px;
+}
+.sns2:hover + .sns2-info{
+    display: block;
+}
+/* Move to instagram of actresses */
+
+/* footer */
+footer>p{
+    padding:5px 15px;
+}
+/* footer */
+
+/* fade in */
+.comments-1, .comments-2, .comments-5{
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+.comments-3,.comments-4{
+    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+    -o-animation: fadein 4s; /* Opera */
+}
+
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* responsive page- On screens that are 1050px or less, */
+@media screen and (max-width: 1050px) {
+    
+    .title {
+        position: absolute;
+        left: 0;
+        top: 40%;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.8s;
+    }
+    .title:hover{
+        transform: scale(1.2);
+    }
+    .title span.border {
+        background-color: #4a138c;
+        color: #fff;
+        padding: var(--padding-sm);
+        font-size: 1.3em;
+        letter-spacing: 4px;
+    }
+    
+    /* comments font size */
+    ul> li{
+        display: inline-block;
+        letter-spacing: 3px;
+        padding-top: var(--padding-md);
+        font-size: 1.2em;
+        text-align: center;
+        color: #fff9c4;
+    }
+    ul>li>span{
+        text-transform: uppercase;
+        padding: var(--padding-sm);
+    }
+
+    .sns1{
+        width: 60%;
+        height: auto;
+    }
+    .sns1-info{
+        display: none;
+        margin-left: 20px;
+        font-size: 0.8rem;
+    }
+    .sns1:hover + .sns1-info{
+        display: block;
+    }
+
+    .sns2{
+        width: 40%;
+        height: auto;
+    }
+    .sns2-info{
+        display: none;
+        margin-left: 5px;
+        font-size: 0.8rem;
+    }
+    .sns2:hover + .sns2-info{
+        display: block;
+    }
+  } 

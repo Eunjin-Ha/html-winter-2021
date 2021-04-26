@@ -1,0 +1,118 @@
+
+/* main  */
+main{
+    grid-area: main;
+}
+
+main>.area-1{
+    background-color: #4b636e;
+}
+main> .area-1> video {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    top: 70px;
+    left: 0;
+    opacity: 0.9;
+}
+
+main> .area-2{
+    background-color: #4b636e;
+    border-bottom: solid 2px #4b636e;
+}
+main> .area-2> h1{
+    font-size: 40px;
+    color: #c2c2c2;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 3rem;
+}
+main> .area-2> h1>span{
+    display: block;
+    line-height: 2;
+}
+
+main> .area-3{
+    margin: 0;
+}
+
+main> .area-3> div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main> .area-3> div> span{
+    font-size: 38px;
+    font-weight: 900;
+    color: #4b636e;
+    text-align: center;
+    padding: 3rem;
+}
+
+main> .area-3> div> img{
+    width: 80%;
+    height: auto;
+}
+main> .area-3> div> img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* button  */
+.lg-btn{
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+.view{
+    background-color: #4b636e;
+    border:solid 1px #4b636e;
+    color: #c2c2c2;    
+    transition: all 1 ease;
+    margin: 2rem;
+}
+.view:hover{
+    background-color:  #fff;
+    color: #4b636e;
+}
+/* button  */
+
+/* Responsive */
+@media screen and (max-width: 830px) and (min-width:629px){
+   /* section 2 */
+    main> .area-2> h1{
+        font-size: 25px;
+    }
+
+    /* section 3 */
+    main> .area-3> div> span{
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 630px) {
+    /* section 1 */
+    main> .area-1> video {
+        margin-top: 50px;
+    }
+    /* section 2 */
+    main> .area-2> h1{
+        font-size: 20px;
+    }
+
+    /* section 3 */
+    main> .area-3> div> span{
+        font-size: 20px;
+    }
+
+    /* button  */
+    .lg-btn{
+        width: 150px;
+        height: 50px;
+        border-radius: 15px;
+        font-size: 15px;
+    }
+}

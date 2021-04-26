@@ -1,0 +1,229 @@
+<!--
+  * How to Order
+  1. select the Pizza image that you want.
+  2. choose the size & quantity.
+  3. choose sidedish which is optional.
+  4. Click the Order button then you can see the alert finally ordered.
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inicial-scale=1">
+    <meta name="description" content="ordering pizza">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Add for icons-->
+    <script src="https://kit.fontawesome.com/62fd5d838c.js" crossorigin="anonymous"></script>
+    <!-- Add for Google font  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer> </script>
+    <title>Let's order Pizza</title>
+  </head>
+  <body>
+
+    <!-- title -->
+    <h1>Pick a pizza</h1>
+
+    <!-- Pick a Pizza  -->
+    <div class="show_menu" id="menuList">
+      <!-- Pizza info - Cheese -->
+      <figure class="figure_img">
+        <a href="#pizzaImg" onclick='changeImg("cheese");'>
+          <img src="../OrderPizza/img/cheese.jpg" alt="Cheese Pizza" >
+        </a>
+        <ul>
+          <li>L 25.00</li>
+          <li>M 18.00</li>
+          <li>S 13.00</li>
+        </ul>
+        <figcaption> Cheess Pizza</figcaption>
+      </figure>
+
+      <!-- Pizza info - grilled -->
+      <figure class="figure_img">
+        <a href="#pizzaImg" onclick='changeImg("chicago");'>
+          <img src="../OrderPizza/img/chicago.jpg" alt="grilled Pizza" >
+        </a>
+        <ul>
+          <li>L 25.00</li>
+          <li>M 18.00</li>
+          <li>S 13.00</li>
+        </ul>
+        <figcaption> chicago Pizza</figcaption>
+      </figure>
+
+      <!-- Pizza info - Neopolitan -->
+      <figure class="figure_img">
+        <a href="#pizzaImg" onclick='changeImg("neopolitan");'>
+          <img src="../OrderPizza/img/neopolitan.jpg" alt="neopolitan Pizza" >
+        </a>
+        <ul>
+          <li>L 25.00</li>
+          <li>M 18.00</li>
+          <li>S 13.00</li>
+        </ul>
+        <!-- Pizza info -->
+        <figcaption> Neopolitan Pizza</figcaption>
+      </figure>
+      
+      <!-- Pizza info - Paparoni-->
+      <figure class="figure_img">
+        <a href="#pizzaImg" onclick='changeImg("paparoni");'>
+          <img src="../OrderPizza/img/paparoni.jpg" alt="paparoni Pizza"></a>
+        <ul>
+          <li>L 25.00</li>
+          <li>M 18.00</li>
+          <li>S 13.00</li>
+        </ul>
+        <!-- Pizza info -->
+        <figcaption> Paparoni  Pizza</figcaption>
+      </figure>
+    </div>
+    <div class="show_menu">
+      <!-- Pizza info - Cube-->
+      <figure class="figure_img">
+        <a href="#pizzaImg" onclick='changeImg("cube");'>
+          <img src="../OrderPizza/img/cube.jpg" alt="cube Pizza"></a>
+        <ul>
+          <li>L 25.00</li>
+          <li>M 18.00</li>
+          <li>S 13.00</li>
+        </ul>
+        <!-- Pizza info -->
+        <figcaption> Cube Pizza</figcaption>
+      </figure>
+
+      <!-- Pizza info - Combination-->
+      <figure class="figure_img">
+        <a href="#pizzaImg" onclick='changeImg("combination");'>
+          <img src="../OrderPizza/img/combination.jpg" alt="combination Pizza"></a>
+        <ul>
+          <li>L 25.00</li>
+          <li>M 18.00</li>
+          <li>S 13.00</li>
+        </ul>
+        <!-- Pizza info -->
+        <figcaption> Combination Pizza</figcaption>
+      </figure>
+
+      <!-- Pizza info - Bacon-->
+      <figure class="figure_img">
+        <a href="#pizzaImg" onclick='changeImg("bacon");'>
+          <img src="../OrderPizza/img/bacon.jpg" alt="bacon Pizza"></a>
+        <ul>
+          <li>L 25.00</li>
+          <li>M 18.00</li>
+          <li>S 13.00</li>
+        </ul>
+        <!-- Pizza info -->
+        <figcaption> Bacon Pizza</figcaption>
+      </figure>
+
+      <!-- Pizza info - Vege-->
+      <figure class="figure_img">
+        <a href="#pizzaImg" onclick='changeImg("vege");'>
+          <img src="../OrderPizza/img/vege.jpg" alt="papavegeroni Pizza"></a>
+        <ul>
+          <li>L 25.00</li>
+          <li>M 18.00</li>
+          <li>S 13.00</li>
+        </ul>
+        <!-- Pizza info -->
+        <figcaption> Vege Pizza</figcaption>
+      </figure>
+    </div>
+
+    <!-- Order Pizza -->
+    <div class="order_detail" >
+      <p class="txtupper font_lg">Order a pizza</p>
+      <!-- when the menu click scroll down here to order pizza -->
+      <div class="order line" id="pizzaImg">
+        <div class="leftSide" >
+          <img id="orderImg" src="../OrderPizza/img/paparoni.jpg" alt="Cheese Pizza">
+        </div>
+        <div class="rightSide">
+          <!-- select size -->
+          <div class="quantity-box">
+            <p class="txtupper font_md">size</p>
+            <button type="button" class="btn-lg font_md_white btn-SizeL" value="L">L 25.00</button>
+            <button type="button" class="btn-lg font_md_white btn-SizeM" value="M">M 18.00</button>
+            <button type="button" class="btn-lg font_md_white btn-SizeS" value="S">S 13.00</button>
+          </div>
+
+          <!-- select quantity -->
+          <div class="choose-lg-box">
+            <p class="txtupper font_md line">Quantity</p>
+            <button type="button" name="button" class="btn-down" ><i class="fas fa-minus"></i></button>
+            <input  type="number"  class="quantity" value="1" readonly >
+            <button type="button" name="button" class="btn-up" > <i class="fas fa-plus"></i> </button>
+          </div>
+
+          <!-- select sidedish  -->
+          <div class="side-dish-box">
+            <p class="txtupper font_md line">Side Dishes & Beverage</p>
+            <ul class="sidedish">
+              <li>
+                <div class="container">
+                  <img src="../OrderPizza/img/macncheese.jpg" alt="Mac and Cheese">
+                  <ul>
+                    <li><span class="font_md">Mac and Cheese</span></li>
+                    <li><span class="price">$13.00</span></li>
+                  </ul>
+                  <select id="side-macncheese">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+                </div>
+              <li>
+                <div class="container">
+                  <img src="../OrderPizza/img/TheKaleQuinoaSalad.jpg" alt="The Kale Quinoa Salad">
+                  <ul>
+                    <li><span class="font_md">The Kale Quinoa Salad</span></li>
+                    <li><span class="price">$13.00</span></li>
+                  </ul>
+                  <select id="side-salad">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+                </div>
+              </li>
+              <li>
+                <div class="container">
+                  <img src="../OrderPizza/img/AlfredoPasta.jpg" alt="Alfredo Pasta">
+                  <ul>
+                    <li><span class="font_md">Alfredo Pasta</span></li>
+                    <li><span class="price">$13.00</span></li>
+                  </ul>
+                  <select id="side-alfredoPasta">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Move to Top -->
+    <a class="moveTop" href="#menuList"><i class="fas fa-chevron-up font_md_white"></i></a>
+
+    <!--  Selected Menu: sticy bottom  -->
+    <div class="check_order">
+      <span class="txtupper font_md_white subject "> Please choose</span> 
+      <span class="font_md_white size" > Size : choose</span>
+      <span class="font_md_white btnQuantity"> Quantity : 1</span>
+      <span class="font_md_white side"> none</span>
+      <span class="txt_pink font_md_white totalPrice"> Total : 0</span>
+      <button type="button" class="btn-lg font_md_white" onclick="confirmOrder();">Order</button>
+    </div>
+
+
+</body>
+</html>

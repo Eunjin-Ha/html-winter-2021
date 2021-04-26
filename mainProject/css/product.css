@@ -1,0 +1,222 @@
+
+
+/* main */
+main{
+    grid-area: main;
+}
+
+/* section - 1 */
+main>.area-1{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+main>.area-1>h2{
+    font-size: 50px;
+    font-weight: 900;
+}
+main> .area-1> div> img {
+    width: 100%;
+    height: auto;
+}
+
+main> .area-1> .select-product>button{
+    margin: 30px 10px;
+    border-radius: 50px;
+    width: 100px;
+    height: 55px;
+    color: #fff;
+    opacity: 1;
+}
+
+/* button colour */
+main> .area-1> .select-product>.red{
+    background-color: #a2203f;
+}
+main> .area-1> .select-product>.red:hover{
+    opacity: 0.8;
+}
+
+main> .area-1> .select-product>.blue{
+    background-color: #72c3c6;
+}
+main> .area-1> .select-product>.blue:hover{
+    opacity: 0.8;
+}
+
+main> .area-1> .select-product>.pink{
+    background-color: #d35495;
+}
+main> .area-1> .select-product>.pink:hover{
+    opacity: 0.8;
+}
+
+main> .area-1> .select-product>.grey{
+    background-color: #c7cbcd;
+}
+main> .area-1> .select-product>.grey:hover{
+    opacity: 0.8;
+}
+
+main> .area-1> .select-product>.black{
+    background-color: #373b42;
+}
+main> .area-1> .select-product>.black:hover{
+    opacity: 0.8;
+}
+
+/* section - 2 */
+main> .area-2{
+    background-color: #4b636e;
+    border-bottom: solid 2px #4b636e;
+}
+main> .area-2> h1{
+    font-size: 40px;
+    color: #c2c2c2;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 60px;
+}
+
+
+/* section - 3 */
+main> .area-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 50px;
+}
+
+main> .area-3> span{
+    display: block;
+    line-height: 2;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+main> .area-3> img{
+    width: 45%;
+    height: auto;
+}
+
+/* button  */
+.lg-btn{
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 30px;
+    font-size: 20px;
+}
+.view{
+    background-color: #4b636e;
+    border:solid 1px #4b636e;
+    color: #c2c2c2;    
+    transition: all 1 ease;
+}
+.view:hover{
+    background-color:  #fff;
+    color: #4b636e;
+}
+.buy{
+    background-color: #fff;
+    border:solid 1px #4b636e;
+    color: #4b636e;
+    transition: all 1 ease;
+}
+.buy:hover{
+    background-color: #4b636e;
+    color: #c2c2c2;
+}
+/* button  */
+
+
+/* Responsive */
+@media screen and (max-width: 830px) and (min-width:629px){
+    /* section 1 */
+    main>.area-1{
+        margin-top: 90px;
+    }
+    main>.area-1>h2{
+        font-size: 23px;
+    }
+    main> .area-1> div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main> .area-1> div> img {
+        width: 65%;
+        padding: 2rem;
+    }
+    main> .area-1> .select-product>button{
+       width: 80px;
+       margin: 2px;
+    }
+
+    /* section 2 */
+    main> .area-2> h1{
+        font-size: 25px;
+    }
+
+    /* section 3 */
+    main> .area-3> span{
+        font-size: 25px;
+    }
+
+     /* button  */
+     .lg-btn{
+        width: 170px;
+        height: 50px;
+        border-radius: 15px;
+        font-size: 15px;
+        margin: 5px;
+    }
+
+}
+@media screen and (max-width: 630px) {
+    /* section 1 */
+    main>.area-1{
+        margin-top: 70px;
+    }
+    main>.area-1>h2{
+        font-size: 20px;
+    }
+    main> .area-1> div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main> .area-1> div> img {
+        width: 60%;
+        padding: 2rem;
+    }
+    main> .area-1> .select-product>button{
+        width: 60px;
+        margin: 5px;
+    }
+
+    /* section 2 */
+    main> .area-2> h1{
+        font-size: 20px;
+    }
+
+    /* section 3 */
+    main> .area-3> span{
+        font-size: 20px;
+    }
+
+    /* button  */
+    .lg-btn{
+        width: 120px;
+        height: 50px;
+        border-radius: 15px;
+        font-size: 15px;
+        margin: 5px;
+    }
+
+}

@@ -1,0 +1,166 @@
+
+/* main  */
+main{
+    grid-area: main;
+}
+
+/* FAQ  */
+main>.area-1{
+    display: grid;
+    grid-template-columns: repeat(1,100%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 100px;
+    padding: 0.2rem 3.5rem 3rem 2.5rem;
+}
+main> .area-1> h2 {
+    font-size: 38px;
+    padding: 0.25rem;
+    font-weight: 900;
+    color: #4b636e;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main>.area-1>.btnFaq{
+    width: 100%;
+    padding: 25px;
+    font-size: 20px;
+    background-color: #4b636e;
+    opacity: 0.7;
+    cursor: pointer;
+    color: #c2c2c2;
+    text-align: left;
+    text-transform: uppercase;
+    transition: all 0.25s ease-out;
+}
+main>.area-1>.btnFaq> i{
+    float: right;
+}
+main>.area-1>.btnFaq:hover{
+    opacity: 1;
+}
+main>.area-1>.detail-faq{
+    background-color: #c2c2c2;
+    transition: 0.25s ease-in-out;
+    display:none;
+}
+main>.area-1>.detail-faq>p{
+    font-size: 18px;
+    padding: 20px;
+    color: #4b636e;
+    transition: 0.25s ease-in-out;
+}
+.show > .fas{
+    transform: rotate(45deg);
+}
+/* FAQ  */
+
+/* contact  */
+main> .area-2{
+    display: grid;
+    grid-template-columns: repeat(1,100%);
+    background-color: #4b636e;
+    border-bottom: solid 2px #4b636e;
+    justify-content: center;
+    align-items: center;
+}
+
+main> .area-2> form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main> .area-2> h1{
+    font-size: 40px;
+    color: #c2c2c2;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 50px 100px;
+}
+main> .area-2> h1>span{
+    display: block;
+    line-height: 2;
+}
+
+/* button  */
+.lg-btn{
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+.view{
+    margin: 20px;
+
+    background-color: #4b636e;
+    border:solid 1px #c2c2c2;
+    color: #c2c2c2;    
+    transition: all 1 ease;
+}
+.view:hover{
+    background-color:  #fff;
+    color: #4b636e;
+}
+/* button */ 
+
+/* input */
+input{
+    width: 50%;
+    height: 50px;
+    display: block;
+}
+textarea{
+    width: 50%;
+    height: 300px;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 830px) and (min-width:629px){
+    /* section 1 */
+    main>.area-1>.btnFaq{
+        font-size: 15px;
+    }
+    main>.area-1>.detail-faq>p{
+        font-size: 15px;
+    }
+
+    /* section 2 */
+     main> .area-2> h1{
+        font-size: 25px;
+    }
+  
+     /* button  */
+     .lg-btn{
+        width: 170px;
+        height: 50px;
+        border-radius: 15px;
+        font-size: 15px;
+    }
+
+}
+@media screen and (max-width: 630px) {
+
+    /* section 1 */
+    main>.area-1>.btnFaq{
+        font-size: 15px;
+    }
+    main>.area-1>.detail-faq>p{
+        font-size: 15px;
+    }
+
+    /* section 2 */
+    main> .area-2> h1{
+        font-size: 20px;
+    }
+
+    /* button  */
+    .lg-btn{
+        width: 150px;
+        height: 50px;
+        border-radius: 15px;
+        font-size: 15px;
+    }
+}
