@@ -1,0 +1,34 @@
+
+body{
+    background-image: url("bg.jpg");
+    background-size: cover;
+    font-family: 'Antonio', sans-serif;
+    color: #fff;
+}
+
+h1{
+    font-size: 5rem;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.countdown-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3.2rem;
+    align-items: center;
+   
+}
+
+/* font size */
+.lg-txt{
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.sm-txt{
+    font-size: 2.5rem;
+    font-weight: 200;
+    text-align: center;
+}
